@@ -26,7 +26,7 @@ public class FormatterService
         {
             "json" => _jsonFormatterFactory.GetFormatter(),
             "xml" => _xmlFormatterFactory.GetFormatter(),
-            "ts" => _tsFormatterFactory.GetFormatter(),
+            "ts" => _tsFormatterFactory.GetFormatter(), // not registered in DI container
             _ => throw new ArgumentException("Invalid format")
         };
 
