@@ -1,6 +1,6 @@
-using FileConverter.Interfaces;
+using FileFormatter.Interfaces;
 
-namespace FileConverter.Factories;
+namespace FileFormatter.Factories;
 
 public class FormatterFactor<TFormatter> : IFormatterFactory<TFormatter>
     where TFormatter : IFileFormatter

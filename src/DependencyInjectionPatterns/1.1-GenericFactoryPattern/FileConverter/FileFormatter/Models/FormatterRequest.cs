@@ -1,4 +1,4 @@
-namespace FileConverter.Models;
+namespace FileFormatter.Models;
 
 public class FormatterRequest
 {

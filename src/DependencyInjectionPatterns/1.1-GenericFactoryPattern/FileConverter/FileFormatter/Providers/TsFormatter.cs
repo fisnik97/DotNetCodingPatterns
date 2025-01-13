@@ -1,6 +1,6 @@
-using FileConverter.Interfaces;
+using FileFormatter.Interfaces;
 
-namespace FileConverter.Providers;
+namespace FileFormatter.Providers;
 
 public class TsFormatter : IFileFormatter
 {

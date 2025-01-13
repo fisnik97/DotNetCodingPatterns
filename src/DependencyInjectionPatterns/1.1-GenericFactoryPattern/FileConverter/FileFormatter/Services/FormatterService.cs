@@ -1,7 +1,7 @@
-using FileConverter.Interfaces;
-using FileConverter.Providers;
+using FileFormatter.Interfaces;
+using FileFormatter.Providers;
 
-namespace FileConverter.Services;
+namespace FileFormatter.Services;
 
 public class FormatterService
 {

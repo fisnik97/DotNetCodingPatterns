@@ -1,4 +1,4 @@
-namespace FileConverter.Interfaces;
+namespace FileFormatter.Interfaces;
 
 public interface IFileFormatter
 {

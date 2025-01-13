@@ -1,8 +1,8 @@
-using FileConverter.Factories;
-using FileConverter.Interfaces;
-using FileConverter.Models;
-using FileConverter.Providers;
-using FileConverter.Services;
+using FileFormatter.Factories;
+using FileFormatter.Interfaces;
+using FileFormatter.Models;
+using FileFormatter.Providers;
+using FileFormatter.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,7 +29,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapPost("/convert", (FormatterRequest request, FormatterService formatterService) =>
+app.MapPost("/format", (FormatterRequest request, FormatterService formatterService) =>
     {
         try
         {
@@ -41,7 +41,7 @@ app.MapPost("/convert", (FormatterRequest request, FormatterService formatterSer
             return Results.BadRequest(new { error = ex.Message });
         }
     })
-    .WithName("ConvertFile")
+    .WithName("FormatFile")
     .WithOpenApi();
 
 
